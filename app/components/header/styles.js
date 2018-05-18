@@ -12,14 +12,8 @@ export default EStyleSheet.create({
     borderBottomWidth: 4,
     borderBottomColor: '#c2bebe',
   },
-  cart: {
-    width: 40,
-    height: 40,
-  },
   logo: {
-    fontSize: 20,
-    marginLeft: 10,
-    fontStyle: 'italic',
-    color: '#292929',
+    width: 150,
+    height: 40,
   },
 });

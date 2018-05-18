@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { View, TouchableOpacity } from 'react-native';
 
 import CustomImage from './CustomImage';
 import styles from './styles';
@@ -13,25 +13,25 @@ import image5 from './images/beanie.jpeg';
 const ContentContainer = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.col2}>
+      <TouchableOpacity style={styles.col2}>
         <CustomImage imageSource={image2} header={'Kicks'} />
-      </View>
+      </TouchableOpacity>
 
-      <View style={styles.col1}>
+      <TouchableOpacity style={styles.col1}>
         <CustomImage imageSource={image1} header={'Jackets'} />
-      </View>
+      </TouchableOpacity>
 
-      <View style={styles.contentBanner}>
+      <TouchableOpacity style={styles.contentBanner}>
         <CustomImage imageSource={image3} header={'Accessories'} />
-      </View>
+      </TouchableOpacity>
 
-      <View style={styles.col1}>
+      <TouchableOpacity style={styles.col1}>
         <CustomImage imageSource={image5} header={'Hats'} />
-      </View>
+      </TouchableOpacity>
 
-      <View style={styles.col2}>
+      <TouchableOpacity style={styles.col2}>
         <CustomImage imageSource={image4} header={'Backpacks'} />
-      </View>
+      </TouchableOpacity>
     </View>
   )
 };
