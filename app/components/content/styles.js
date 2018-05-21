@@ -50,7 +50,12 @@ export default EStyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    width: '90%',
-    height: 80,
-  }
+    width: '100%',
+  },
+  item: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '80%',
+    height: 20,
+  },
 });

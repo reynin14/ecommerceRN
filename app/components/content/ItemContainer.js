@@ -3,10 +3,12 @@ import { View, Text } from 'react-native';
 
 import styles from './styles';
 
+import Item from './Item';
+
 const ItemContainer = () => {
   return (
     <View style={styles.itemContainer}>
-      <Text>Inside Item Container</Text>
+      <Item />
     </View>
   )
 }
