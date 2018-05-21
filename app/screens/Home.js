@@ -16,7 +16,7 @@ class Home extends React.Component {
       <Container>
         <Header />
         <Banner />
-        <ContentContainer handleKicksPress={this.handleKicksPress}/>
+        <ContentContainer onPress={this.handleKicksPress}/>
       </Container>
     )
   }

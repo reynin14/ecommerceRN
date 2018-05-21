@@ -6,8 +6,14 @@ import Kicks from '../screens/Kicks';
 export default createStackNavigator({
   Home: {
     screen: Home,
+    navigationOptions: {
+      headerTitle: 'Home',
+    }
   },
   Kicks: {
     screen: Kicks,
+    navigationOptions: {
+      headerTitle: 'Shop Kicks',
+    }
   }
 });

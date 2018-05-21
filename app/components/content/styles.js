@@ -45,6 +45,12 @@ export default EStyleSheet.create({
     padding: 8,
     marginTop: 8,
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
-
   },
+  itemContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '90%',
+    height: 80,
+  }
 });

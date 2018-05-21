@@ -10,10 +10,10 @@ import image3 from './images/watches2.jpg';
 import image4 from './images/backpack.jpg';
 import image5 from './images/beanie.jpeg';
 
-const ContentContainer = ({ handleKicksPress }) => {
+const ContentContainer = ({ onPress }) => {
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.col2} onPress={handleKicksPress} >
+      <TouchableOpacity style={styles.col2} onPress={onPress} >
         <CustomImage imageSource={image2} header={'Kicks'} />
       </TouchableOpacity>
 
