@@ -5,7 +5,7 @@ import { Header } from '../components/header';
 import { Banner } from '../components/banner';
 import { ContentContainer } from '../components/content';
 
-class Home extends React.Component {
+class Home extends React.PureComponent {
 
   handleKicksPress = () => {
     this.props.navigation.navigate('Kicks')
