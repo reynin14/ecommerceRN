@@ -48,6 +48,7 @@ export default EStyleSheet.create({
   },
   itemContainer: {
     flex: 1,
+    flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     width: '100%',
@@ -56,6 +57,5 @@ export default EStyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     width: '80%',
-    height: 28,
   },
 });

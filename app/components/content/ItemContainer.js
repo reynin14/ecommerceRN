@@ -9,6 +9,7 @@ const ItemContainer = () => {
   return (
     <View style={styles.itemContainer}>
       <Item />
+      <Item />
     </View>
   )
 }

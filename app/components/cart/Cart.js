@@ -5,9 +5,9 @@ import { Ionicons } from '@expo/vector-icons';
 
 import styles from './styles';
 
-const Cart = () => {
+const Cart = ({ onPress }) => {
   return(
-    <TouchableOpacity style={styles.icon}>
+    <TouchableOpacity style={styles.icon} onPress={onPress}>
       <Ionicons name="ios-cart-outline" size={32} />
     </TouchableOpacity>
   )

@@ -11,12 +11,20 @@ class Home extends React.PureComponent {
     this.props.navigation.navigate('Kicks')
   }
 
+  handleCartPress = () => {
+    this.props.navigation.navigate('Cart')
+  }
+
   render(){
     return(
       <Container>
-        <Header />
+        <Header
+          onPress={this.handleCartPress}
+        />
         <Banner />
-        <ContentContainer onPress={this.handleKicksPress}/>
+        <ContentContainer
+          onPress={this.handleKicksPress}
+        />
       </Container>
     )
   }
