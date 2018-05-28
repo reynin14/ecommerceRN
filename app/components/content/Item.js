@@ -1,11 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { Text, View, Image, Button } from 'react-native';
 
 import styles from './styles';
 
-import greedy from './images/shoes.png'
+import { addToCart } from '../../actions/cart';
 
-const Item = () => {
+
+
+const Item = ({ name, image, price }) => {
 
   handleOnPress = () => {
     console.log('Adding to Cart')
@@ -13,12 +17,18 @@ const Item = () => {
 
   return (
     <View style={styles.item}>
-      <Text>Nike Prestos (Greedy)</Text>
-      <Image source={greedy} style={styles.image} />
-      <Text>Price: $120</Text>
+      <Text>{name}</Text>
+      <Image source={image} style={styles.image} />
+      <Text>Price: ${price}</Text>
       <Button title={'Add to cart'} onPress={this.handleOnPress}></Button>
     </View>
   )
 };
+
+Item.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.any,
+  price: PropTypes.number,
+}
 
 export default Item;
